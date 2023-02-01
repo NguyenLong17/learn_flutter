@@ -1,6 +1,7 @@
 import 'package:button_navigation_bar/button_navigation/flutter_bloc/count.dart';
 import 'package:button_navigation_bar/button_navigation/flutter_bloc/tab_bar_page.dart';
 import 'package:button_navigation_bar/button_navigation/provider/navigation_bar_page.dart';
+import 'package:button_navigation_bar/button_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -21,10 +22,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
       // home: NavigationBarPage(),
-      home: BlocProvider<CounterCubit>(
-        create: (_) => CounterCubit(),
-        child: TabBarPage(),
-      ),
+      // home: BlocProvider<CounterCubit>(
+      //   create: (_) => CounterCubit(),
+      //   child: TabBarPage(),
+      // ),
+      home: ButtonSheet(),
     );
   }
 }
